@@ -9,3 +9,7 @@ output "vpc_cidr" {
 output "private_subnet_ids" {
     value = aws_subnet.private_subnets[*].id
 }
+
+output "vpc_module_version" {
+    value = var.vpc_module_version
+}

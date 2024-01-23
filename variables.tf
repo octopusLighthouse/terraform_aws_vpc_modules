@@ -23,3 +23,12 @@ variable "private_subnet_cidrs" {
         "10.0.22.0/24",
     ]
 }
+
+variable "vpc_module_version" {
+    default = "2024.01.23 Tuesday"
+
+    validation {
+        condition     = var.vpc_module_version == "2024.01.23 Tuesday"
+        error_message = "Cannot override the default value."
+    }
+}
