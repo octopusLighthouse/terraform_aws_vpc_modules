@@ -1,9 +1,13 @@
-variable "vpc_cidr" {
-    default = "10.0.0.0/16"
+variable "naming_prefix" {
+    default = "test"
 }
 
 variable "env" {
     default = "dev"
+}
+
+variable "vpc_cidr" {
+    default = "10.0.0.0/16"
 }
 
 variable "public_subnet_cidrs" {
